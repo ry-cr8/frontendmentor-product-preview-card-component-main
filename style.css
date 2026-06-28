@@ -108,6 +108,11 @@ main {
   color: white;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
+}
+
+.btn-addcart:hover {
+  background-color: hsl(158, 42%, 18%);
 }
 
 .attribution {
