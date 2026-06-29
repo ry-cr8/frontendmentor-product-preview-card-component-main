@@ -123,3 +123,101 @@ main {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media screen and (max-width: 768px) {
+  main {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .main-container-card {
+    width: 100%;
+    max-width: 360px;
+    flex-direction: column;
+  }
+
+  .left-child,
+  .right-child {
+    width: 100%;
+  }
+
+  .left-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .right-child {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .right-elements {
+    padding: 24px;
+  }
+
+  .right-elements h2 {
+    font-size: 32px;
+    margin-right: 0;
+  }
+
+  .right-elements p {
+    margin-right: 0;
+  }
+
+  .price-container {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .btn-addcart {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 20px 12px;
+  }
+
+  .main-container-card {
+    max-width: 100%;
+  }
+
+  .left-image {
+    height: 220px;
+  }
+
+  .right-elements {
+    padding: 20px;
+  }
+
+  .right-elements h5 {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  .right-elements h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .right-elements p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .price-container h1 {
+    font-size: 30px;
+  }
+
+  .btn-addcart {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
